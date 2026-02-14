@@ -29,6 +29,11 @@ body {
     color: rgb(72, 211, 72);
 }
 
+.logo a{
+    color: rgb(72, 211, 72);
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
