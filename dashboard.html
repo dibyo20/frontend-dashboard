@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <navbar class="upper-navbar">
+      <div class="logo">
+        <p><b>GeeksforGeeks</b></p>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="searchbar">
+        <input type="text" placeholder="search.." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="profile">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-circle-user user"></i>
+      </div>
+    </navbar>
+
+    <div class="mainlayout">
+      <div class="sidenav">
+        <div class="sidenav-content">
+          <i class="fa-solid fa-house nav-icons"></i><span><b>Dashboard</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-newspaper nav-icons"></i><span><b>Articles</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-file nav-icons"></i><span><b>Report</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-building-columns nav-icons"></i>
+          <span><b>Institution</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-file-pen nav-icons"></i><span><b>Profile</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-gear nav-icons"></i><span><b>Settings</b></span>
+        </div>
+        <div class="sidenav-content">
+          <i class="fa-solid fa-power-off nav-icons"></i><span><b>Logout</b></span>
+        </div>
+      </div>
+      <div class="main-div">
+        <div class="upperdiv">
+          <div class="cards-1">
+            <div class="stat-info">
+              <h2>60.5k</h2>
+              <p>Article Views</p>
+            </div>
+            <div class="stat-icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </div>
+          <div class="cards-2">
+            <div class="stat-info">
+              <h2>150</h2>
+              <p>Likes</p>
+            </div>
+            <div class="stat-icon">
+              <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+          </div>
+          <div class="cards-1">
+            <div class="stat-info">
+              <h2>320</h2>
+              <p>Comments</p>
+            </div>
+            <div class="stat-icon">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+          </div>
+          <div class="cards-2">
+            <div class="stat-info">
+              <h2>70</h2>
+              <p>Published</p>
+            </div>
+            <div class="stat-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+        <div class="lowerdiv">
+          <div class="first">
+            <h1>Recent Articles</h1>
+            <button type="button">View All</button>
+          </div>
+          <hr class="hrline" />
+          <div class="second">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>Article</th>
+                  <th>Views</th>
+                  <th></th>
+                  <th>Comments</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Article 73</td>
+                  <td>2.0k</td>
+                  <td></td>
+                  <td>210</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 72</td>
+                  <td>1.5k</td>
+                  <td></td>
+                  <td>310</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 71</td>
+                  <td>1.1k</td>
+                  <td></td>
+                  <td>360</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 70</td>
+                  <td>1.3k</td>
+                  <td></td>
+                  <td>250</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 69</td>
+                  <td>1.5k</td>
+                  <td></td>
+                  <td>360</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 68</td>
+                  <td>1.3k</td>
+                  <td></td>
+                  <td>260</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+
+                <tr>
+                  <td>Article 67</td>
+                  <td>1.6k</td>
+                  <td></td>
+                  <td>160</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>
