@@ -11,10 +11,10 @@
     <title>GFG</title>
   </head>
   <body>
-    <navbar class="upper-navbar">
+    <nav class="upper-navbar">
       <div class="logo">
         <p><b>GeeksforGeeks</b></p>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="menuBtn"></i>
       </div>
       <div class="searchbar">
         <input type="text" placeholder="search.." />
@@ -24,38 +24,44 @@
         <i class="fa-solid fa-bell"></i>
         <i class="fa-solid fa-circle-user user"></i>
       </div>
-    </navbar>
+    </nav>
 
     <div class="mainlayout">
       <div class="sidenav">
         <div class="sidenav-content">
-          <i class="fa-solid fa-house nav-icons"></i><span><b>Dashboard</b></span>
+          <i class="fa-solid fa-house nav-icons"></i
+          ><span><b>Dashboard</b></span>
         </div>
         <div class="sidenav-content">
-          <i class="fa-solid fa-newspaper nav-icons"></i><span><b>Articles</b></span>
+          <i class="fa-solid fa-newspaper nav-icons"></i
+          ><span
+            ><b><a href="article.html">Articles</a></b></span
+          >
         </div>
         <div class="sidenav-content">
-          <i class="fa-solid fa-file nav-icons"></i><span><b>Report</b></span>
+          <i class="fa-solid fa-file nav-icons"></i><span><b><a href="report.html">Report</a></b></span>
         </div>
         <div class="sidenav-content">
           <i class="fa-solid fa-building-columns nav-icons"></i>
-          <span><b>Institution</b></span>
+          <span><b><a href="institution.html">Institution</a></b></span>
         </div>
         <div class="sidenav-content">
-          <i class="fa-solid fa-file-pen nav-icons"></i><span><b>Profile</b></span>
+          <i class="fa-solid fa-file-pen nav-icons"></i
+          ><span><b>Profile</b></span>
         </div>
         <div class="sidenav-content">
           <i class="fa-solid fa-gear nav-icons"></i><span><b>Settings</b></span>
         </div>
         <div class="sidenav-content">
-          <i class="fa-solid fa-power-off nav-icons"></i><span><b>Logout</b></span>
+          <i class="fa-solid fa-power-off nav-icons"></i
+          ><span><b>Logout</b></span>
         </div>
       </div>
       <div class="main-div">
         <div class="upperdiv">
           <div class="cards-1">
             <div class="stat-info">
-              <h2>60.5k</h2>
+              <h2>50M</h2>
               <p>Article Views</p>
             </div>
             <div class="stat-icon">
@@ -64,7 +70,7 @@
           </div>
           <div class="cards-2">
             <div class="stat-info">
-              <h2>150</h2>
+              <h2>750k</h2>
               <p>Likes</p>
             </div>
             <div class="stat-icon">
@@ -73,7 +79,7 @@
           </div>
           <div class="cards-1">
             <div class="stat-info">
-              <h2>320</h2>
+              <h2>320k</h2>
               <p>Comments</p>
             </div>
             <div class="stat-icon">
@@ -170,6 +176,6 @@
       </div>
     </div>
 
-    <script type="module" src="dashboard.js"></script>
+    <script src="dashboard.js"></script>
   </body>
 </html>

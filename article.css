@@ -1,0 +1,163 @@
+:root {
+    --primary: #1e1b8f;       
+    --secondary: #2b26aa;     
+    --background: white;     
+    --text: #ffffff;          
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--primary);
+}
+
+.logo {
+    color: rgb(72, 211, 72);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    color: var(--text);
+}
+
+.nav-links .green{
+    color: rgb(72, 211, 72);
+}
+
+.nav-links a {
+    cursor: pointer;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+.main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.article-card {
+    background: var(--secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h2 {
+    margin-bottom: 10px;
+}
+
+.meta {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.read-btn {
+    padding: 8px 16px;
+    border: none;
+    background: var(--primary);
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-card {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-card h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar-card ul {
+    list-style: none;
+}
+
+.sidebar-card li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-card {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .sidebar {
+        flex-direction: column;
+    }
+
+    .sidebar-card {
+        width: 100%;
+    }
+}
